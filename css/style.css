@@ -33,7 +33,10 @@ linear-gradient
      padding: 0 5%;
      margin: 0 auto;
     }
+ section{
+    padding: 2.7rem 0;
 
+ }
 .BTN-GRADIENTE{
    padding: 10px 25px;
    color: white;
@@ -89,5 +92,73 @@ main .container{
 }
 .menu-icon{
         display:none;
+        position: relative;
+        z-index: 10px;
+}
+.resultados{
+      background-color: #f86313;
+}
+.RESULTADOS .CONTEINER{
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+.RESULTADOS .resultados-text{
+    color: white;
+     font-size: 1.6rem;
+     font-weight: 600;
+     width: 50%;
+}
+.RESULTADOS .resultados-numericos{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: white;
+}
+.RESULTADOS .resultados-numericos p{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+}
+.RESULTADOS .resultados-numericos p span{
+    font-size: 30px;
+    font-weight: 600;
+}
 
+@media(MAX-WIDTH:960PX) {
+    .menu-icon{
+        display:block;
+}
+.ul{
+  position: fixed;
+  background: var(--color);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 100%;
+  transition: 0.3s;
+  flex-direction: column;
+  justify-content: center;
+}
+.ul li {
+    font-size: 20px;
+    margin: 20px 0;
+}
+.ul.ativo {
+    left: 0%;
+}
+main .container{
+  flex-direction: column;
+}
+ main .container .main-img,
+ main .container .main-text{
+    width: 100%;
+    text-align: center;
+ }
+ main .container .main-text h1{
+     font-size: 4rem;
+ }
+ main .container .main-text div{
+    justify-content: center;
+ }
 }
