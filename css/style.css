@@ -33,7 +33,8 @@ linear-gradient
      padding: 0 5%;
      margin: 0 auto;
     }
- section{
+ section,
+ footer{
     padding: 2.7rem 0;
 
  }
@@ -114,6 +115,7 @@ main .container{
    align-items: center;
    justify-content: center;
    color: white;
+   margin: 20px;
 }
 .RESULTADOS .resultados-numericos p{
     text-align: center;
@@ -160,5 +162,8 @@ main .container{
  }
  main .container .main-text div{
     justify-content: center;
+ }
+ .resultados .container{
+     flex-direction: column;
  }
 }
